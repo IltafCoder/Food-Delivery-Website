@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./main.js"></script>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="./bootstrap.bundle.min.js"></script>
+  <title>Food Delivery Website</title>
+</head>
+
+<body id="sec-home">
+  <section>
+    <nav class="navbar navbar-expand-lg bg-light mt-2 mx-3 rounded">
+      <div class="container-lg bg-light">
+        <a class="navbar-brand text-primary fw-semibold fs-3" href="#">
+          <img src="../Food Delivery Website/logo.png" alt="Logo" width="50" height="50"
+            class="d-inline-block align-text-center">
+          Food Delivery
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-primary active fw-bold smooth-scroll" aria-current="page" href="#sec-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#sec-menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#sec-testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#sec-about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#sec-contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-lg-5 ms-0" role="search">
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-md mt-5">
+      <div class="row">
+        <div class="col-lg-6 col-12 pt-3 mt-5">
+          <div class="pt-3">
+            <h1 class="display-5">Taste The Difference</h1>
+            <h2 class="h3 text-primary mb-4" style="font-family: courgete;">Delivered To Your Door!</h2>
+            <p>We're dedicated to bringing exceptional flavors straight to your door. Our handpicked menu, crafted by
+              passionate chefs, promises a culinary adventure with every order. Enjoy restaurant-quality meals,
+              conveniently delivered for your pleasure. Explore the taste of convenience today!</p>
+            <input class="form-control" type="text" placeholder="Your favourite food...">
+            <div class="d-grid d-sm-flex justify-content-sm-center mt-4">
+              <button class="btn btn-lg btn-primary" type="submit">Search</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 pt-3">
+          <span class="d-flex justify-content-center align-items-center pt-5">
+            <img src="./food.png" alt="" class="img-fluid">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5 pt-5 all-food-menu" id="sec-menu">
+    <div class="container mt-5">
+
+      <h1 class="h2 text-center mb-5">Explore The Menu</h1>
+
+      <nav class="food-menu">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+          <button class="nav-link active menu-tabs" id="nav-main-courses-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-main-courses" type="button" role="tab" aria-controls="nav-main-courses"
+            aria-selected="true" onclick="tabAnimation('nav-main-courses')">
+            Main Courses
+          </button>
+
+          <button class="nav-link menu-tabs" id="nav-appetizers-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-appetizers" type="button" role="tab" aria-controls="nav-appetizers"
+            aria-selected="true" onclick="tabAnimation('nav-appetizers')">
+            Appetizers
+          </button>
+
+          <button class="nav-link menu-tabs" id="nav-salads-tab" data-bs-toggle="tab" data-bs-target="#nav-salads"
+            type="button" role="tab" aria-controls="nav-salads" aria-selected="true" onclick="tabAnimation('nav-salads')">
+            Salads
+          </button>
+
+          <button class="nav-link menu-tabs" id="nav-desserts-tab" data-bs-toggle="tab" data-bs-target="#nav-desserts"
+            type="button" role="tab" aria-controls="nav-desserts" aria-selected="true" onclick="tabAnimation('nav-desserts')">
+            Desserts
+          </button>
+
+          <button class="nav-link menu-tabs" id="nav-beverages-tab" data-bs-toggle="tab" data-bs-target="#nav-beverages"
+            type="button" role="tab" aria-controls="nav-beverages" aria-selected="true" onclick="tabAnimation('nav-beverages')">
+            Beverages
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-main-courses" role="tabpanel"
+          aria-labelledby="nav-main-courses-tab">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Margherita</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Grilled Salmon</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Spaghetti Carbonara</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Classic Cheeseburger</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Shrimp Scampi</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vegetable Stir-Fry</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">California Roll</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/main-8.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Grilled Ribeye Steak</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="nav-appetizers" role="tabpanel" aria-labelledby="nav-appetizers-tab">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/app-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bruschetta</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/app-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mozzarella Sticks</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/app-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Wings</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/app-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Spinach Artichoke Dip</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/app-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Calamari</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="nav-salads" role="tabpanel" aria-labelledby="nav-salads-tab">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/salad-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Caesar Salad</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/salad-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Greek Salad</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/salad-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cobb Salad</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/salad-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Caprese Salad</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/salad-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Waldorf Salad</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="nav-desserts" role="tabpanel" aria-labelledby="nav-desserts-tab">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/d-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolate Cake</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/d-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple Pie</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/d-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Creme Brulee</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/d-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tiramisu</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="nav-beverages" role="tabpanel" aria-labelledby="nav-beverages-tab">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Soda</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Iced Tea</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bottled Water</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Lemonade</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Milkshakes</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Coffee</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 24rem;">
+                  <img src="./Images/b-7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hot Tea</h5>
+                    <a href="#" class="btn btn-primary">Order</a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="mt-5 pt-5" id="sec-testimonials">
+    <div class="container mt-5">
+      <h1 class="h2 text-center mb-5">Our Testimonials</h1>
+
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="d-flex align-items-center flex-md-row flex-column">" Wow! I can't express how convenient and
+              delicious the food delivery service is on this site. It's like
+              having a personal chef at my fingertips. The variety of cuisines available is impressive, and the delivery
+              is always on time. Thanks to this site, my dinner dilemmas are solved! "<img src="./Images/review-1.jpg"
+                alt="review-1" class="my-4"></p>
+            <footer class="blockquote-footer">Sarah T.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-header">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="d-flex align-items-center flex-md-row flex-column">" I've been using this food delivery site for a
+              while now, and I'm consistently impressed. Whether it's a
+              quick lunch or a special dinner, the quality of the food and the efficiency of the service have never
+              disappointed me. I highly recommend it! "<img src="./Images/review-2.jpg" alt="review-1" class="my-4"></p>
+            <footer class="blockquote-footer">David P.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-header">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="d-flex align-items-center flex-md-row flex-column">" As a busy working man, this food delivery
+              site has been a lifesaver. It's so easy to order wholesome
+              and delicious meals for my family, and it frees up time that I can spend with my loved ones. I can't thank
+              this site enough for making my life easier! "<img src="./Images/review-3.jpg" alt="review-1" class="my-4">
+            </p>
+            <footer class="blockquote-footer">Dennis Jackson.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-header">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="d-flex align-items-center flex-md-row flex-column">" I'm a foodie, and I have high standards when
+              it comes to food. This food delivery site has consistently
+              delivered on taste, presentation, and freshness. It's like bringing the restaurant experience home. I'm a
+              loyal customer for a reason! "<img src="./Images/review-4.jpg" alt="review-1" class="my-4"></p>
+            <footer class="blockquote-footer">Micheal L.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-header">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p class="d-flex align-items-center flex-md-row flex-column">" I used to dread cooking after a long day at
+              work, but this food delivery site has changed everything.
+              The menu options are diverse, the prices are reasonable, and the delivery is super quick. It's become a
+              staple in my daily routine. Thanks, team! "<img src="./Images/review-5.jpg" alt="review-1" class="my-4">
+            </p>
+            <footer class="blockquote-footer">Leon Kevin.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="mt-5 mx-3 pt-5" id="sec-about">
+    <div class="container-fluid mt-5">
+      <h1 class="h2 text-center mb-5">About Us</h1>
+      <div class="row justify-content-center align-items-center mb-5 flex-md-row flex-column">
+        <div class="col-md-6 col-12">
+          <img src="./Images/about-us.jpg" alt="" class="rounded-5 img-fluid mb-4">
+        </div>
+        <div class="col-md-6 col-12">
+          <p>From a humble beginning to your favorite food delivery service, our journey has been filled with passion
+            and
+            flavor. We started with a vision to connect you with the culinary delights of your city, and today, we're
+            proud
+            to serve you with a wide variety of cuisines and dishes.<br><br>Our team is a blend of food enthusiasts,
+            tech
+            wizards, and delivery heroes. We're united by our love for great food and a commitment to making your dining
+            moments special. We work tirelessly to ensure every meal you order is a delightful
+            experience.<br><br>Quality is
+            our secret ingredient. From hand-picking the freshest ingredients to partnering with the finest restaurants,
+            we're obsessed with bringing you the best. Your satisfaction is our recipe for success.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="mt-5 pt-5 footer-section" id="sec-contact">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center align-items-start bg-primary py-3 mb-5">
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center my-3">
+          <h4>About Us</h4>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center my-3">
+          <h4>Menu</h4>
+          <li><a href="#">Browse Menu</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Nutritional Info</a></li>
+          <li><a href="#">Allergens</a></li>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center my-3">
+          <h4>Order Online</h4>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Takeout</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Rewards Program</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center my-3">
+          <h4>Contact Us</h4>
+          <div class="d-flex">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="container-fluid mb-2 d-flex flex-column align-items-center justify-content-center">
+      <label class="form-label fs-2 mt-5">Subscribe Us</label>
+      <input type="email" class="form-control" placeholder="name@example.com">
+      <div class="container-fluid d-grid d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-lg btn-primary mt-4 mb-5">Join Now</button>
+      </div>
+      <p class="text-muted text-center">&copy; 2023 Your Food Delivery. All rights reserved.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
